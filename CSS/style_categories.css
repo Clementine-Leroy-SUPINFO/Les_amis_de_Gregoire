@@ -1,0 +1,74 @@
+.conteneur_categorie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 3em;
+    width: 90%;
+}
+
+.article {
+    background-color: white;
+    padding: 1em;
+    margin: 0.5em;
+    border: 1px solid #4E6445;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.savoir-plus {
+    background-color: #4E6445 ;
+    border: #4E6445 solid 1px;
+    border-radius: 10px;
+}
+
+.nom_produit {
+    color:#4E6445;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.img {
+    width: 15vw;
+    height: 20vh;
+    /* pour que l'image remplisse toute la zone */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#a {
+    background-image: url("../media/images/articles/sac-a-foin-1.png");
+}
+
+#b {
+    background-image: url("../media/images/articles/dodo-1.png");
+}
+
+#c {
+    background-image: url("../media/images/articles/stylo-1.png");
+}
+
+#d {
+    background-image: url("../media/images/articles/tote-bag-1.png");
+}
+
+#e {
+    background-image: url("../media/images/articles/chocolat-1.png");
+}
+
+#f {
+    background-image: url("../media/images/articles/panier-1.png");
+}
+#g {
+    background-image: url("../media/images/articles/calendrier-1.png");
+}
+
+#h {
+    background-image: url("../media/images/articles/carte-1.png");
+}

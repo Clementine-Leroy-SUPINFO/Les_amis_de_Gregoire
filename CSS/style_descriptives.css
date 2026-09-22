@@ -1,0 +1,186 @@
+/* region PHOTOS ARTICLE*/
+.conteneur_photo_article {
+    /*border: #263126 solid 1px;*/
+    /*border-radius: 10px;*/
+    /*width: 90%;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex_wrap: nowrap;
+}
+
+.photo_article {
+    width: 300px;
+    height: 411px;
+    margin: 1em;
+    border-radius: 10px;
+    border: #4E6445 solid 1px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* endregion */
+
+
+/* region CARACTERISTIQUES*/
+.conteneur_caracteristique {
+    display: grid;
+    /*border:1px solid #000;*/
+    margin: 1em;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr) minmax(200px,2fr));
+    text-align: center;
+    align-items: stretch;
+}
+
+.sous-conteneur_caracteristique {
+    background-color: #4E6445;
+    color: #FFF9EE;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sous-conteneur_caracteristique:nth-child(even) {
+    background-color: white;
+    color: #263126;
+}
+/* endregion */
+
+
+/* region ACHAT */
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sous-conteneur_formulaire {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    font-size: 0.8em;
+    background-color: #4E6445;
+    color: #FFF9EE;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 1em;
+}
+
+input[type=number] {
+    font-size: 0.8em;
+    background-color: #4E6445;
+    color: #FFF9EE;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 1em;
+}
+
+button[type="submit"] {
+    font-size: 0.8em;
+    background-color: #4E6445;
+    color: #FFF9EE;
+    border-radius: 5px;
+    padding: 3px;
+}
+/* endregion */
+
+
+/*region RECOMMANDATIONS*/
+.conteneur_recommendation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: white;
+    color: #FFF9EE;
+    border-radius: 15px;
+}
+
+.article {
+    margin: 15px;
+    padding: 10px;
+    border: #4E6445 solid 1px;
+    border-radius: 10px;
+    height: 20vh;
+    width: 15vw;
+    /*pour que l'image remplisse toute la zone*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.titre_article {
+    border : black solid 1px;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    background-color: #4E6445;
+    margin: auto;
+}
+/* endregion */
+
+
+/* region LISTE IMAGES ARTICLES */
+#a {
+    background-image: url("../media/images/articles/sac-a-foin-1.png");
+}
+#b {
+    background-image: url("../media/images/articles/dodo-1.png");
+}
+#c {
+    background-image: url("../media/images/articles/stylo-1.png");
+}
+#d {
+    background-image: url("../media/images/articles/tote-bag-1.png");
+}
+#e {
+    background-image: url("../media/images/articles/chocolat-1.png");
+}
+#f {
+    background-image: url("../media/images/articles/panier-1.png");
+}
+#g {
+    background-image: url("../media/images/articles/calendrier-1.png");
+}
+#h {
+    background-image: url("../media/images/articles/carte-1.png");
+}
+#i {
+    background-image: url("../media/images/articles/sac-a-foin-2.png");
+}
+#j {
+    background-image: url("../media/images/articles/dodo-2.png");
+}
+#k {
+    background-image: url("../media/images/articles/stylo-2.png");
+}
+#l {
+    background-image: url("../media/images/articles/tote-bag-2.png");
+}
+#m {
+    background-image: url("../media/images/articles/chocolat-2.png");
+}
+#n {
+    background-image: url("../media/images/articles/panier-2.png");
+}
+#o {
+    background-image: url("../media/images/articles/calendrier-2.png");
+}
+#p {
+    background-image: url("../media/images/articles/carte-2.png");
+}
+/* endregion */

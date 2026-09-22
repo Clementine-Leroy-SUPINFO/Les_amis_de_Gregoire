@@ -1,0 +1,227 @@
+/* region TOUTES PAGES SUPPORT*/
+Main {
+    text-align: center;
+}
+/* endregion */
+
+
+/* region FORMULAIRE CONTACT*/
+.info {
+    margin: 1em;
+    padding: 1em;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    /*PERMET QUE L'UTILISATEUR·RICE NE REDIMENTIONNE LA ZONE QUE VERTICALEMENT*/
+    resize: vertical;
+    /*PERMET QUE LA POLICE HERITE CELLE DE SON CONTENANT ICI CELLE PRECISEE DANS LE BODY*/
+    font-family: inherit;
+}
+
+/*POUR PERMETTRE DE COLORER LES BORDURES DES CHAMPS UNIQUEMENT SOUS CERTAINES CONDITIONS*/
+input:required:focus:invalid {
+    border-color: red;
+}
+
+input:required:focus:valid {
+    border-color: green;
+}
+/* endregion */
+
+
+/* region PAGE 404*/
+#animation_404 {
+    /*Permet d'ajouter l'animation. La durée et le nombre de rep (ex : 3 ou infinite)*/
+    animation : rebond 2s 1;
+    animation-timing-function: ease-in-out;
+}
+
+.photo_404 {
+    animation: fondu 2s ease-in;
+    /*Afin que l'animation ne démarre pas tout de suite*/
+    animation-delay: 2s;
+    /*l'élément serait visible normalement pendant les 2 secondes de délai, puis disparaîtrait soudainement pour commencer le fade. Avec backwards, il reste invisible (comme à l'état 0% du keyframe) pendant tout le délai.*/
+    animation-fill-mode: backwards;
+}
+
+.animation_glissee {
+    animation: glissee 2s 1;
+    animation-delay: 4s;
+    animation-fill-mode: backwards;
+    margin-bottom: 2em;
+}
+
+.fondu {
+    animation: fondu 2s ease-in;
+    animation-delay: 6s;
+    animation-fill-mode: backwards;
+}
+
+#lien_accueil_404 {
+    border-color: #4E6445;
+    border-radius: 10px;
+    padding: 0.5em;
+    animation : surlignage 2s infinite;
+    animation-delay: 8s;
+    animation-fill-mode: backwards;
+}
+/* endregion */
+
+
+/* region ANIMATION TITRE PAGE 404*/
+@keyframes rebond {
+/*Les pourcentages représentent les moments dans le temps de l'animation. 0=aucun décalage,
+-fait monter sur l'axe Y et + fait monter.
+- fait aller à gauche sur l'axe X et + fait aller à droite*/
+    0% {
+    transform: translateX(-100vw) translateY(-5vw);
+    }
+    5% {
+        transform: translateX(-75vw) translateY(0vw);
+    }
+    10% {
+        transform: translateX(-67vw) translateY(-4vw);
+    }
+    15% {
+        transform: translateX(-60vw) translateY(0vw);
+    }
+    20% {
+        transform: translateX(-48vw) translateY(-3vw);
+    }
+    25% {
+        transform: translateX(-37vw) translateY(0vw);
+    }
+    30% {
+        transform: translateX(-31vw) translateY(-2vw);
+    }
+    35% {
+        transform: translateX(-25vw) translateY(0vw);
+    }
+    40% {
+        transform: translateX(-21vw) translateY(-1.5vw);
+    }
+    45% {
+        transform: translateX(-19vw) translateY(0vw);
+    }
+    50% {
+        transform: translateX(-15vw) translateY(-1.25vw);
+    }
+    55% {
+        transform: translateX(-12vw) translateY(0vw);
+    }
+    60% {
+        transform: translateX(-10.5vw) translateY(-0.5vw);
+    }
+    65% {
+        transform: translateX(-9vw) translateY(0vw);
+    }
+    70% {
+        transform: translateX(-7.5vw) translateY(-0.5vw);
+    }
+    75% {
+        transform: translateX(-6vw) translateY(0vw);
+    }
+    80% {
+        transform: translateX(-4.5vw) translateY(-0.25vw);
+    }
+    85% {
+        transform: translateX(-3vw) translateY(0vw);
+    }
+    90% {
+        transform: translateX(-1.5vw) translateY(-0.25vw);
+    }
+    100% {
+        transform: translateX(-0vw) translateY(0vw);
+    }
+}
+
+@keyframes fondu {
+    0% {
+        opacity : 0;
+    }
+    100% {
+        opacity : 1;
+    }
+}
+
+@keyframes glissee {
+    0% {
+        transform: translateX(+100vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes surlignage {
+    0%, 100% {
+        background-color: #263126;
+    }
+    50% {
+        background-color: #4E6445;
+    }
+   }
+/* endregion */
+
+
+/* region PANIER*/
+.conteneur_panier {
+    border: #4E6445 solid 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.panier{
+    margin: 1em;
+}
+
+.titre_panier{
+    border: #4E6445 dotted 1px;
+    border-radius: 10px;
+    color: #4E6445;
+}
+
+.sous-conteneur_panier {
+    display : flex ;
+    flex-direction: row;
+    margin : 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image_panier{
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 100px;
+}
+
+.descriptif_panier {
+    margin-left : 10px;
+    margin-right: 10px;
+}
+
+.prix_panier{
+    min-width: 75px;
+    font-weight: 700;
+}
+
+#a{
+ background-image: url("../media/images/articles/tote-bag-1.png");
+}
+
+#b{
+    background-image: url("../media/images/articles/dodo-1.png");
+}
+
+#c{
+    background-image: url("../media/images/articles/chocolat-1.png");
+}
+/* endregion */
