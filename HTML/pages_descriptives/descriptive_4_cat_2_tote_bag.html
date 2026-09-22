@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tote bag</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/style_descriptives.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="conteneur_header">
+        <div class="sous-conteneur_header">
+            <div><H1>Les copains de Grégoire</H1></div>
+        </div>
+        <div class="sous-conteneur_header">
+            <div>
+                <img class="=logo" height="60" width="60"
+                     alt="logo du site : un cochon d'inde à poil ras roux marron et blanc au centre d'un cercle blanc aux bords verts olive"
+                     src="../../media/images/logo/logo_cercle_sans-titre.png">
+            </div>
+        </div>
+        <div class="sous-conteneur_header">
+            <nav>
+                <a class="lien_header" title="Retour à la page d'accueil" href="../../index.html">Accueil</a>
+                <a class="lien_header" title="Redirection vers le formulaire de contact"
+                   href="../../HTML/pages_support/support_1_contact.html">Nous contacter</a>
+                <a class="lien_header" title="Accès à votre panier"
+                   href="../../HTML/pages_support/support_2_panier.html"><img height="35" width="35"
+                                                                              src="../../media/images/autres/panier_2.png"
+                                                                              aria-hidden="true"></a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="bandeau conteneur">
+        <H2 id="titre_bandeau">Tote bag</H2>
+    </div>
+    <div class="espace" aria-hidden="true"></div>
+
+    <!--    PHOTOS DE L'ARTICLE-->
+    <section class="conteneur">
+        <div class="conteneur_photo_article">
+            <div class="photo_article" id="d"></div>
+            <div class="photo_article" id="l"></div>
+        </div>
+    </section>
+
+    <!--    DESCRIPTION DU PRODUIT-->
+    <section class="conteneur">
+        <p>
+            Promenez-vous fièrement avec le tote bag floqué au logo de notre association. Fabriqué en France et cousu à
+            la main, il résistera à des charges lourdes lors de vos sorties.
+        </p>
+    </section>
+
+
+    <!--CARACTERISTIQUES-->
+    <section class="conteneur caracteristique">
+        <H2>Caractéristiques</H2>
+        <div class="conteneur_caracteristique">
+            <div class="sous-conteneur_caracteristique sous-conteneur_caracteristique1">Dimensions</div>
+            <div class="sous-conteneur_caracteristique sous-conteneur_caracteristique2">38 x 42 cm</div>
+            <div class="sous-conteneur_caracteristique">Poids</div>
+            <div class="sous-conteneur_caracteristique">200 gr</div>
+            <div class="sous-conteneur_caracteristique">Couleur</div>
+            <div class="sous-conteneur_caracteristique">Beige</div>
+            <div class="sous-conteneur_caracteristique">Matériaux</div>
+            <div class="sous-conteneur_caracteristique">Cotton</div>
+            <div class="sous-conteneur_caracteristique">Entretien</div>
+            <div class="sous-conteneur_caracteristique">Lavable en machine à 30 degrés</div>
+            <div class="sous-conteneur_caracteristique">Prix</div>
+            <div class="sous-conteneur_caracteristique">15 €</div>
+        </div>
+    </section>
+
+
+    <!--    ACHAT-->
+    <section class="conteneur formulaire">
+        <div>
+            <H2>Achat</H2>
+        </div>
+        <div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="643c90d4-7946-4569-bfb6-7f192c3db646">
+                <div class="sous-conteneur_formulaire">
+                    <label for="article">Sélectionnez votre article</label>
+                    <select name="article" id="article">
+                        <optgroup label="Accessoires">
+                            <option value="Dodo confort">Dodo confort</option>
+                            <option value="Sac à foin">Sac à foin</option>
+                        </optgroup>
+                        <optgroup label="Goodies">
+                            <option value="Stylo">Stylo</option>
+                            <option value="Tote bag">Tote bag</option>
+                        </optgroup>
+                        <optgroup label="Gourmandises">
+                            <option value="Coffret chocolat">Coffret chocolat</option>
+                            <option value="Panier gourmand">Panier gourmand</option>
+                        </optgroup>
+                        <optgroup label="Papeterie">
+                            <option value="Calendrier">Calendrier</option>
+                            <option value="Carte postale">Carte postale</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="sous-conteneur_formulaire">
+                    <label for="Quantité">Quantité</label>
+                    <input type="number" name="Quantité" id="Quantité" min="1" max="100">
+                </div>
+                <div class="sous-conteneur_formulaire">
+                    <button type="submit">Ajouter au panier</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--    VOUS POURRIEZ AIMER...-->
+    <section class="fond_blanc conteneur">
+        <H2>Vous pourriez aussi aimer...</H2>
+        <div class="conteneur_recommendation">
+            <div class="article" id="b">
+                <a title="redirection vers l'article dodo confort"
+                   href="../pages_descriptives/descriptiv_2_cat1_dodo_confort.html">
+                    <div class="titre_article">
+                        <p class="lien_categorie">Dodo confort</p></div>
+                </a>
+            </div>
+            <div class="article" id="c">
+                <a title="redirection vers l'article stylo" href="../pages_descriptives/descriptive_3_cat2_stylo.html">
+                    <div class="titre_article">
+                        <p class="lien_categorie">Stylo
+                        <p/></div>
+                </a>
+            </div>
+            <div class="article" id="e">
+                <a title="redirection vers l'article coffret chocolat"
+                   href="../pages_descriptives/descriptive_5_cat3_coffret_chocolat.html">
+                    <div class="titre_article">
+                        <p class="lien_categorie">Coffret chocolat
+                        <p/></div>
+                </a>
+            </div>
+            <div class="article" id="g">
+                <a title="redirection vers l'article calendrier"
+                   href="../pages_descriptives/descriptive_7_cat4_calendrier.html">
+                    <div class="titre_article">
+                        <p class="lien_categorie">Calendrier
+                        <p/></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="espace" aria-hidden="true">
+    </div>
+
+</main>
+
+
+<footer>
+    <div class="footer_grid">
+        <div class="footer_navigation">
+            <nav>
+                <H3>Accès rapides</H3>
+                <a class="footer_contenu" title="retour en haut de la page"
+                   href="#">Retour en haut de la page</a>
+                <a class="footer_contenu" title="Accès aux accessoires"
+                   href="../../HTML/pages_categories/categorie_1_accessoires.html">Accessoires</a>
+                <a class="footer_contenu" title="Accès aux goodies"
+                   href="../../HTML/pages_categories/categorie_2_goodies.html">Goodies</a>
+                <a class="footer_contenu" title="Accès aux gourmandises"
+                   href="../../HTML/pages_categories/categorie_3_gourmandises.html">Gourmandises</a>
+                <a class="footer_contenu" title="Accès à la papeterie"
+                   href="../../HTML/pages_categories/categorie_4_papeterie.html">Papeterie</a>
+            </nav>
+        </div>
+        <div class="footer_navigation">
+            <nav>
+                <H3>On reste en contact</H3>
+                <a title="redirection vers le formulaire de contact" class="footer_contenu"
+                   href="../../HTML/pages_support/support_1_contact.html">Formulaire de contact</a>
+                <a class="footer_contenu" title="redirection vers la page Facebook de l'association"
+                   href="../../support_3_error_404.html">Notre page Facebook</a>
+            </nav>
+        </div>
+        <div class="footer_navigation">
+            <H3>Mention Légales</H3>
+            <p class="footer_contenu"> Les copains de Grégoire, Copyright 2026</p>
+            <p class="footer_contenu">5 rue de la Grille Verte 37000 Tours</p>
+            <p class="footer_contenu">02·43·20·47·73</p>
+            <p class="footer_contenu">Toutes les images du site sont générées par IA et sont donc libres de droit.
+                En revanche, l'intégralité du code composant ce site est la propriété actuelle de l'association.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
